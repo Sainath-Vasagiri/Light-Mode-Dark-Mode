@@ -1,0 +1,257 @@
+#header{
+    height: 60px;
+    margin-left: 0%;
+    background-color: rgb(240, 198, 143);
+}
+body{
+    margin: auto;
+}
+#icon{
+    margin-left: 1%;
+    position: absolute;
+    margin-top: -1%;
+    color: rgb(56, 11, 0);
+}
+
+#Social{
+    float: right;
+    margin-right: 1%;
+}
+a{
+    text-decoration: none;
+}
+.sociallogo{
+    height: 45px;
+    width: 45px;
+    margin-top: 6px;
+}
+#DetailsContainer{
+    height: 600px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+#Filter{
+    
+    height: 610px;
+    width: 25%;
+    float: left;
+
+}
+#Content{
+    height: 340px;
+    width: 69%;
+    float: left;
+    margin-left: 5%;
+
+}
+#Heading{
+    font-weight: bold;
+    font-family: cursive;
+}
+#SubHeading{
+    line-height: 3;
+    font-weight: bold;
+    font-family: cursive;
+}
+#check1{
+    line-height: 2;
+}
+#check2{
+    line-height: 2;
+}
+#check3{
+    line-height: 2;
+}
+#check4{
+    line-height: 2;
+}
+#check5{
+    line-height: 2;
+}
+#check6{
+    line-height: 2;
+}
+#check7{
+    line-height: 2;
+}
+#check8{
+    line-height: 2;
+}
+#check9{
+    line-height: 2;
+}
+#Category{
+    font-weight: bold;
+    font-family: cursive;
+    line-height: 3;
+}
+#cat1{
+    line-height: 2;
+}
+#Rate{
+    font-weight: bold;
+    font-family: cursive;
+    line-height: 3;
+}
+#Price1{
+    line-height: 2;
+}
+#Price2{
+    line-height: 2;
+}
+
+#MainHeading{
+    
+    margin-top: -27px;
+    font-family:cursive
+}
+#SubContent{
+    border: 2px solid gray;
+    height: 305px;
+    margin-top: -18px;
+    width: 770px;
+}
+#SubContent1{
+   
+    height: 233px;
+    width: 37%;
+    margin-left: 11px;
+    margin-top: 10px;
+}
+#SubContent1 > img{
+    height: 233px;
+    width: 100%;
+}
+#SubContent2{
+    background-color: rgb(240, 198, 143);
+    margin-right: 10px;
+    height: 280px;
+    width: 58%;
+    float: right;
+    margin-top: -233px;
+
+}
+#Contents{
+    height: 340px;
+    width: 69%;
+    float: left;
+    margin-left: -70%;
+    margin-top: 10%;
+
+}
+
+#SubContents1{
+   
+    height: 233px;
+    width: 37%;
+    margin-left: 11px;
+    margin-top: 10px;
+    
+}
+#SubContents1 > img{
+    height: 233px;
+    width: 100%;
+}
+#SubContents2{
+    background-color: rgb(240, 198, 143);
+    margin-right: 10px;
+    height: 280px;
+    width: 58%;
+    float: right;
+    margin-top: -233px;
+
+
+}
+#mainHeading{
+    margin-top: -27px;
+    font-family:cursive
+}
+#maintext{
+   
+    height: 203px;
+    width: 420px;
+    margin-top: -10px;
+    margin-left: 3px;
+    text-align:justify;
+    color: rgb(0, 0, 0);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#Price{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-top: -35px;
+}
+#strike{
+    color: grey;
+}
+.checked {
+    color: rgb(255, 136, 0);
+    line-height: 2px;
+  }
+  @media screen and (max-width:1400px){
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+}
+@media screen and (max-width:1200px){
+    body{
+        background-color: rgb(57 19 66);
+    }
+}
+@media screen and (max-width:1000px){
+    body{
+        background-color: rgb(135 189 102);
+    }
+}
+@media screen and (max-width:800px){
+    body{
+        background-color: rgb(126 48 48);
+    }
+}
+@media screen and (max-width:600px){
+    body{
+        background-color: rgb(199 231 185);
+    }
+    #DetailsContainer{
+        height: -100px;
+        width: 1500%;
+        margin-left: 1%;
+        margin-top: 5%;
+    }
+    #Category{
+        float: left;
+        margin-top: -339px;
+        margin-left: 15%;
+    } 
+    #cat1{
+        line-height: 2;
+        margin-top: -289px;
+        margin-left: 15%;
+    }
+    #Rate{
+        margin-left: 23%;
+        margin-top: -177px;
+        line-height: 3;
+    }
+    #Price1{
+        line-height: 2;
+        margin-left: 23%;
+    }
+    #Price2{
+        line-height: 2;
+        margin-left: 23%;
+    }
+    #MainHeading{
+
+        margin-left: -1px;
+        margin-top: 5%;
+    }
+    #SubContent{
+  
+        margin-top: 120px;
+        margin-left: -43%;
+    }
+    
+
+}

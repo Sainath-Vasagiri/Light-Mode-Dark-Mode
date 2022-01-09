@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="home.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/3fe16e504a.js"></script>
+        <span id="toggle-switch" title="Toggle Dark Theme" style="margin-left: 1331px; background-color: grey">
+            <i class="fas fa-moon" id="toggle-switch"></i>
+        </span>
+    <script>
+        const DARK_MODE = 'dark';
+        const LIGHT_MODE = 'light';
+        const THEME = 'mode';
+
+        document.addEventListener(
+            'DOMContentLoaded', (event) => {
+                applyTheme();
+                const toggleSwitch = document.getElementById('toggle-switch');
+                toggleSwitch.onclick = function () {
+                    let currentMode = localStorage.getItem(THEME);
+                    localStorage.setItem(
+                        THEME,
+                        currentMode === DARK_MODE ? LIGHT_MODE : DARK_MODE
+                    );
+                    applyTheme();
+                }
+            }
+        );
+
+        function applyTheme() {
+            let html = document.documentElement;
+            let currentMode = localStorage.getItem(THEME);
+            if (currentMode === DARK_MODE) {
+                html.classList.add(DARK_MODE);
+                document.getElementById('toggle-switch').innerHTML =
+                    '<i class="fas fa-sun"></i>';
+            }
+            else {
+                html.classList.remove(DARK_MODE);
+                document.getElementById('toggle-switch').innerHTML =
+                    '<i class="fas fa-moon"></i>';
+            }
+        }
+    </script>
+
+    <!--Header Start-->
+    <div id="header">
+        <div id="icon">
+            <h1>
+                <a href="list.html">Zomato..!!</a>
+            </h1>
+        </div>
+        <div id="Social">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="fb.png" alt="Facebook" class="slogo" />
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="insta.png" alt="Instagram" class="slogo" />
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="ytube.png" alt="Youtube" class="slogo" />
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img src="twitter.png" alt="Youtube" class="slogo" />
+            </a>
+        </div>
+    </div>
+    <!--Header End-->
+    <!--Search Start-->
+    <div id="Search">
+        <div id="logo">
+            <span>Z!</span>
+        </div>
+        <div id="Caption">
+            <h2>
+                Find the Best Restaurants Near You..!!
+            </h2>
+            <div id="shadow">
+
+            </div>
+            <div id="dropdown">
+                <select>
+                    <option>
+                        Select City
+                    </option>
+                    <option>
+                        Hyderabad
+                    </option>
+                    <option>
+                        Kurnool
+                    </option>
+                    <option>
+                        Vijayawada
+                    </option>
+                    <option>
+                        Guntur
+                    </option>
+                    <option>
+                        Bangalore
+                    </option>
+                    <option>
+                        Delhi
+                    </option>
+                    <option>
+                        Mumbai
+                    </option>
+                    <option>
+                        Ranchi
+                    </option>
+                    <option>
+                        Bihar
+                    </option>
+                    <option>
+                        Gujarat
+                    </option>
+                </select>
+                <select class="restaurantSelect">
+                    <option>
+                        Select for Restaurant, Cuisine or a Dish
+                    </option>
+                    <option>
+                        Harsha The Family Restaurant
+                    </option>
+                    <option>
+                        Lotus Restaurant
+                    </option>
+                    <option>
+                        Aadi Hotel
+                    </option>
+                    <option>
+                        SP REDDY PUNJABI DHABA
+                    </option>
+                    <option>
+                        Ajwa Restaurant
+                    </option>
+                    <option>
+                        Kwality Biryani-Kabab's
+                    </option>
+                    <option>
+                        Royal Peng-win Multi Cuisine Restaurant
+                    </option>
+                    <option>
+                        Taste Inn Family Restaurant
+                    </option>
+                    <option>
+                        Hangout
+                    </option>
+                    <option>
+                        Athidi Family Restaurant
+                    </option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!--Search End-->
+    <!--Quick Search Start-->
+    <div id="QuickSearch">
+        <span id="heading">
+            Quick Search
+        </span>
+        <span id="subheading">
+            Discover Restaurants By Meal
+        </span>
+        <div id="boxcontainer">
+            <div id="box1">
+                <div id="boxheading">
+                    <center>
+                        <h3>BreakFast</h3>
+                    </center>
+                </div>
+                <img src="breakfast.jpg" alt="BreakFast">
+            </div>
+            <div id="box1">
+                <div id="boxheading">
+                    <center>
+                        <h3>Lunch</h3>
+                    </center>
+                </div>
+                <img src="lunch.jpg" alt="Lunch">
+            </div>
+            <div id="box1">
+                <div id="boxheading">
+                    <center>
+                        <h3>Snacks</h3>
+                    </center>
+                </div>
+                <img src="evening snacks.jpg" alt="Snacks">
+            </div>
+            <div id="box1">
+                <div id="boxheading">
+                    <center>
+                        <h3>Dinner</h3>
+                    </center>
+                </div>
+                <img src="dinner.jpg" alt="Dinner">
+            </div>
+        </div>
+    </div>
+    <!--Quick Search End-->
+</body>
+<!--Footer Start-->
+<footer>
+    <hr>
+    <center>
+        <h3>
+            &copy;Vasagiri Sainath
+        </h3>
+    </center>
+</footer>
+<!--Footer End-->
+
+</html>
